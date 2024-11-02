@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TechnoKids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="images/icono.png" alt="Icono" class="icono">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">Sobre el Proyecto</a></li>
+                    <li><a href="resources.html">Recursos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h2>¡Contáctanos!</h2>
+            <p>Ingresa tu correo para recibir una bienvenida a TechnoKids</p>
+            <form action="send_welcome_email.php" method="post" class="contact-form">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="tuemail@ejemplo.com">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TechnoKids. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

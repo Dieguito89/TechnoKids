@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a TechnoKids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="images/icono.png" alt="Icono" class="icono">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">Sobre el Proyecto</a></li>
+                    <li><a href="resources.html">Recursos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Bienvenido a TechnoKids</h2>
+            <p>Bienvenido a nuestra página web oficial!. Este proyecto está diseñado para ayudar a los padres y/o encargados legales a comprender los riesgos de un uso excesivo de los dispositivos electrónicos y a proteger a sus hijos de forma efectiva. Acá se abarcará el uso de controles parentales como forma de protección contra las amenazas y peligros a la que los niños se exponen. Tambien se enseñará a controlar el uso de diário recomendado en los dispisitivos.</p>
+         
+            <div class="news-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Noticia 1 -->
+                        <div class="swiper-slide">
+                            <a href="articles/control-parental.html" class="news-link">
+                                <div class="news-item">
+                                    <img src="images/control.jpg" alt="Control Parental">
+                                    <div class="news-content">
+                                        <h3>Guía de Control Parental</h3>
+                                        <p>Protege a tus hijos en el mundo digital.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Noticia 2 -->
+                        <div class="swiper-slide">
+                            <a href="articles/tiempo-pantalla.html" class="news-link">
+                                <div class="news-item">
+                                    <img src="images/tiempo.jpg" alt="Tiempo de Pantalla">
+                                    <div class="news-content">
+                                        <h3>Tiempo de Pantalla Saludable</h3>
+                                        <p>Establece límites en el uso de dispositivos.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Noticia 3 -->
+                        <div class="swiper-slide">
+                            <a href="articles/seguridad-online.html" class="news-link">
+                                <div class="news-item">
+                                    <img src="images/seguridad.jpg" alt="Seguridad Online">
+                                    <div class="news-content">
+                                        <h3>Seguridad Online para Niños</h3>
+                                        <p>Tips para mantener seguros a tus hijos en internet.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Agregamos los botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <p>Para obtener más información sobre los artículos y el propósito del proyecto, visita la sección <a href="about.html">Sobre el Proyecto</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TechnoKids. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
